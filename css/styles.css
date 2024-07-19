@@ -1,0 +1,135 @@
+.nav-link:hover {
+    color: #558720 !important; /* Change to your preferred hover color */
+	font-weight: bold;
+}
+
+.nav-link {
+    position: relative; /* Ensures the pseudo-element is positioned relative to the link */
+    overflow: hidden; /* Prevents the line from being visible outside the link's bounds */
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%; /* Start from the middle */
+    width: 0; /* Initially, the line is not visible */
+    height: 2px; /* Height of the line */
+    background-color: #558720; /* Color of the line, change as needed */
+    transition: width 0.5s ease, left 0.7s ease; /* Smooth transition for the line */
+}
+
+.nav-link:hover::after {
+    width: 100%; /* Full width on hover */
+    left: 0; /* Start from the left edge */
+}
+
+
+/**********************/
+/*     Statistics     */
+/**********************/
+.counter {
+	padding-top: 4.5rem;
+	padding-bottom: 5.5rem;
+	text-align: center;
+}
+
+.counter .counter-cell {
+	margin-bottom: 4rem;
+}
+
+.counter .purecounter {
+	margin-bottom: 1.5rem;
+	color: #191e47;
+	font-weight: 400;
+	font-size: 4rem;
+	line-height: 2rem;
+}
+
+.counter .counter-info {
+	color: #6d717a;
+	font-size: 0.875rem;
+	line-height: 1.5rem;
+}
+
+
+/*************************/
+/*     Media Queries     */
+/*************************/	
+/* Min-width 768px */
+@media (min-width: 768px) {
+
+
+	/* Statistics */
+	.counter .counter-cell {
+		display: inline-block;
+		margin-right: 1.5rem;
+		margin-left: 1.5rem;
+		vertical-align: top;
+	}
+	/* end of statistics */
+
+	/* end of extra pages */
+}
+/* end of min-width 768px */
+
+
+/* Min-width 992px */
+@media (min-width: 992px) {
+
+	/* Statistics */
+	.counter .purecounter {
+		font-size: 6rem;
+		line-height: 4rem;
+	}
+	/* end of statistics */
+
+	/* end of extra pages */
+}
+/* end of min-width 992px */
+
+
+/* Min-width 1200px */
+@media (min-width: 1200px) {	
+
+	/* Statistics */
+	.counter .counter-cell {
+		margin-right: 3.5rem;
+		margin-left: 3.5rem;
+		width: 180px;
+	}
+	
+	.counter .counter-cell:first-of-type {
+		margin-left: 0;
+	}
+
+	.counter .counter-cell:last-of-type {
+		margin-right: 0;
+	}
+
+	.counter .purecounter {
+		font-size: 6.75rem;
+		line-height: 4.5rem;
+	}
+	/* end of statistics */
+
+}
+/* end of min-width 1200px */
+
+.carousel-inner img {
+    height: 400px; /* Set a fixed height */
+    object-fit: cover; /* Ensure the image covers the entire area */
+  }
+
+.carousel-caption {
+    color: #558720; /* Set font color */
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .card-body {
+    flex-grow: 1;
+  }

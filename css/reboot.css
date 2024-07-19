@@ -1,0 +1,47 @@
+
+/* Primary colour change */
+.btn-primary,
+.btn-primary:visited,
+.btn-primary:focus {
+    background-color: #558720;
+    border-color: #558720;
+}
+
+
+.btn-primary:hover,
+.btn-primary:active {
+    background-color: #558720;
+    border-color: #558720;
+}
+
+.btn-primary:active:focus,
+.btn-primary:focus {
+    box-shadow: 0 0 0 .25rem rgba(199, 49, 253, 0.5);
+}
+
+.text-primary {
+    color: #558720 !important;
+}
+
+.bg-primary {
+    background-color: #f9f8ff !important;
+}
+
+.border-primary {
+    border-color: #558720 !important;
+}
+
+.alert-primary {
+    color: #558720;
+    background-color: #e0ffbf;
+    border-color: #adcc8c;
+}
+
+
+/* Hover effect for cards (features) */
+.card {
+    transition: all 0.3s;
+}
+.card:hover {
+    transform: scale(1.025);
+}
